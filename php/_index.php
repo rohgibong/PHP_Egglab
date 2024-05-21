@@ -37,31 +37,7 @@
       <label id="label_id" class="label_id"></label>
       <label id="label_pwd" class="label_pwd"></label>
       <button type="button" onClick="login();" class="loginBtn" >로그인</button>
-    </div>
-    <!-- <div id="btnDiv">
-      
-    </div> -->
-
-  <!--      
-
-      <div id="inputDiv">
-        <input type="text" name="id" id="id" onkeydown="if(event.keyCode==13) login()"><br>
-        <input type="password" name="pwd" id="pwd" onkeydown="if(event.keyCode==13) login()"><br>
-      </div>
-      <label id="label_id"></label>
-      <label id="label_pwd"></label>
-
-      <div id="findDiv">
-        <a href="./login_findId.php" id="fintIdPw">
-          아이디/비밀번호 찾기
-        </a>
-      </div>
-
-      <div id="btnDiv">
-        <button type="button" onClick="login();" id="loginBtn" >LOGIN</button>
-        <button type="button" onClick="location.href='./login_joinMember.php'" id="joinBtn">JOIN US</button>
-      </div> -->
-    
+    </div>    
 
   </form>
   </div>
