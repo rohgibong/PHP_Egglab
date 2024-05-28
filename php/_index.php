@@ -9,16 +9,14 @@
 <body>
   <?php
     session_start();
-    $memberNo = isset($_SESSION["memberNo"]) ? $_SESSION["memberNo"] : 0;
-    // $previousPageUrl = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 0;
-    // $previous = explode('/', $previousPageUrl);
+    $uid = isset($_SESSION["uid"]) ? $_SESSION["uid"] : 0;
   ?>
   <script>
-    // const memberNo = <?php echo $memberNo ?>;
-    // if(memberNo > 0){
-    //   alert('이미 로그인 된 상태입니다.');
-    //   location.href='./_index.php';
-    // }
+    const uid = <?php echo $uid ?>;
+    if(uid > 0){
+      alert('이미 로그인 된 상태입니다.');
+      location.href='./mainPage.php';
+    }
   </script>
 <div class="mainDiv">
   <div class="logoDiv">
@@ -31,11 +29,13 @@
     <h1>로그인</h1>
     <div class="loginContent">
       <div id="inputDiv">
-        <input type="text" name="id" id="id" class="id" placeholder="아이디" onkeydown="if(event.keyCode==13) login()"><br>
+        <input type="text" name="uid" id="uid" class="uid" placeholder="관리자 UID" onkeydown="if(event.keyCode==13) login()"><br>
         <input type="password" name="pwd" id="pwd" class="pwd" placeholder="비밀번호" onkeydown="if(event.keyCode==13) login()"><br>
+        <input type="text" name="locationId" id="locationId" class="locationId" placeholder="지역 관리번호" onkeydown="if(event.keyCode==13) login()"><br>
       </div>
-      <label id="label_id" class="label_id"></label>
+      <label id="label_uid" class="label_uid"></label>
       <label id="label_pwd" class="label_pwd"></label>
+      <label id="label_location" class="label_location"></label>
       <button type="button" onClick="login();" class="loginBtn" >로그인</button>
     </div>    
 

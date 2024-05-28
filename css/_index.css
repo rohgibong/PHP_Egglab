@@ -48,7 +48,7 @@ body, html {
   position: relative;
 }
 
-.id, .pwd {
+.uid, .pwd, .locationId {
   width: 97%;
   height: 30px;
   font-size: 16px;
@@ -59,18 +59,22 @@ body, html {
   border-bottom: 1px solid lightgray;
 }
 
-.id:focus, .pwd:focus{
+.uid:focus, .pwd:focus, .locationId:focus{
   outline: none;
 }
 
-.label_id, .label_pwd{
+.label_uid, .label_pwd, .label_location{
   width: 120px;
   text-align: left;
   position: absolute;
-  margin-top: -55px;
+  margin-top: -113px;
 }
 
 .label_pwd{
+  margin-top: -52px;
+}
+
+.label_location{
   margin-top: 7px;
 }
 
