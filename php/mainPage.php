@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/mainPage.css">
 </head>
 
-<!-- <?php
+<?php
   session_start();
   $uid = isset($_SESSION["uid"]) ? $_SESSION["uid"] : 0;
 ?>
@@ -17,11 +17,11 @@
     alert('잘못된 접근입니다.');
     location.href='./_index.php';
   }
-</script> -->
+</script>
 
 <body>
   <div class="titleDiv">
-    <a href="./process/logoutProc.php" class="logoutBtn">LOGOUT</a>
+    <img src="../img/logoutImg.png" alt="logoutImg" onclick="location.href='./process/logoutProc.php';" class="logoutBtn" width="80px">
     <div class="nav_logo">
       <img src="../img/logo2.png" alt="logoImg" width="150px" onclick="location.href='mainPage.php';">
     </div>
@@ -35,7 +35,10 @@
         </li>
       </ul>
     </nav>
-    
+  </div>
+
+  <div class="imgDiv">
+    <img src="../img/image1.jpg" width="600px">
   </div>
 
 

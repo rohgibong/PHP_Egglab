@@ -55,7 +55,19 @@
 
 .logoutBtn{
   float: right;
-  margin-right: 40px;
-  text-decoration: none;
-  color: black;
+  margin-right: 70px;
+  margin-top: 5px;
+}
+
+.logoutBtn:hover{
+  cursor: pointer;
+}
+
+.imgDiv {
+  text-align: center; /* 이미지가 가운데로 정렬되도록 설정 */
+  margin-top: 20px; /* 상단 여백 추가 */
+}
+
+.imgDiv img {
+  display: inline-block; /* 이미지를 inline-block으로 설정 */
 }
