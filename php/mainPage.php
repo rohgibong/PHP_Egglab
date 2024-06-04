@@ -42,7 +42,13 @@
   </div>
 
   <div class="imgDiv">
-    <img src="../img/image1.jpg" width="600px">
+    <h2>CAM 1</h2>
+    <!-- <img src="http://112.175.185.142:5000/video_feed/0" alt="CAM 1 Stream" width="600px">
+    <h2>CAM 2</h2>
+    <img src="http://112.175.185.142:5000/video_feed/1" alt="CAM 2 Stream" width="600px"> -->
+    <img src="http://220.67.0.226:5000/video_feed/0" alt="CAM 1 Stream" width="600px">
+    <h2>CAM 2</h2>
+    <img src="http://220.67.0.226:5000/video_feed/1" alt="CAM 2 Stream" width="600px">
   </div>
 </body>
 </html>
