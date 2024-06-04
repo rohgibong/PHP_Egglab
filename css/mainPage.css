@@ -12,19 +12,19 @@
   border-bottom: 1px solid black;
 }
 
-.header_nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .nav_logo {
   float: left;
   height: 20px;
   cursor: pointer;
   margin-left: 50px;
   margin-top: 30px;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .nav_menu {
@@ -39,9 +39,11 @@
 
 .nav_menu li {
   padding: 8px 22px;
+  padding-bottom: 50px;
   margin: 0px 60px;
   cursor: pointer;
   text-align: center;
+  position: relative;
 }
 
 .nav_menu li a {
@@ -53,21 +55,50 @@
   color: lightcoral;
 }
 
-.logoutBtn{
+.cctv1Class:hover .submenu {
+  display: flex; /* 가로 배치 */
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: -70px;
+  background-color: #fff;
+  padding: 10px 20px; /* 좌우 패딩 추가 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cctv1Class .submenu a {
+  display: inline-block;
+  text-decoration: none !important;
+  color: black !important;
+  margin: 0px 20px;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 5px 10px; /* 링크에 좌우 패딩 추가 */
+  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
+}
+
+.cctv1Class .submenu a:hover {
+  text-decoration: underline !important;
+}
+
+.logoutBtn {
   float: right;
   margin-right: 70px;
   margin-top: 5px;
 }
 
-.logoutBtn:hover{
+.logoutBtn:hover {
   cursor: pointer;
 }
 
 .imgDiv {
-  text-align: center; /* 이미지가 가운데로 정렬되도록 설정 */
-  margin-top: 20px; /* 상단 여백 추가 */
+  text-align: center;
+  margin-top: 20px;
 }
 
 .imgDiv img {
-  display: inline-block; /* 이미지를 inline-block으로 설정 */
+  display: inline-block;
 }
