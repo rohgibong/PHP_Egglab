@@ -41,6 +41,16 @@
     </nav>
   </div>
 
+  <div class="imgDiv">
+    <!-- <div class="imageContainer">
+        <img src="http://192.168.0.126:5000/video_feed/0" alt="CAM 1 Stream" class="cameraImage">
+        <h2>CAM 1</h2>
+    </div> -->
+    <div class="imageContainer">
+        <img src="http://192.168.0.126:5000/video_feed/1" alt="CAM 2 Stream" class="cameraImage">
+        <h2>CAM 2</h2>
+    </div>
+  </div>
 
 </body>
 </html>
